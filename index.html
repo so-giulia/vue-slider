@@ -4,20 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500&display=swap" rel="stylesheet">
     <!-- My CSS -->
     <link rel="stylesheet" href="css/style.css">
     <title>Vue Slider</title>
 </head>
 <body>
+    <!-- header start -->
+    <header class="row justify-between align-center">
+        <nav class="nav-home">
+            <ul>
+                <li>
+                    <a class="nav-link" href="#">Johanna Halpin</a>
+                </li>
+        </nav>
 
-    <!-- vue slider start -->
+        <nav class="nav-info">
+            <ul class="row justify-between">
+                <li>
+                    <a class="nav-link" href="#">Catalogue</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Info</a>
+                </li>
+            </ul>   
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- main (vue) start -->
     <div id="root">
+        <main>
+            <!-- slider start -->
+            <div class="slider-container row justify-center align-center">
+                <!-- prev start -->
+                <div class="prev row justify-center align-center">
+                    <img class="chevron-prev" src="img/svg/chevron-right.svg" alt="chevron-left">
+                </div>
+                <!-- prev end -->
 
+                <!-- slides start -->
+                <img src="img/img1.jpeg" alt="Img1">
+                <!-- slides end -->
+
+                <!-- next start -->
+                <div class="next row justify-center align-center">
+                    <img class="chevron-next" src="img/svg/chevron-right.svg" alt="chevron-right">
+                </div>
+                <!-- next end -->
+            </div>
+            <!-- slider end -->
+        </main>
     </div>
-    <!-- vue slider end -->
+    <!-- main (vue) end -->
 
+    <!-- footer start -->
+    <footer>
+        <p>&copy; some random text</p>
+    </footer>
+    <!-- footer end -->
     
-
     <!-- Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <!-- Script -->
