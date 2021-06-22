@@ -22,9 +22,6 @@ body{
 
 header{
     height: 60px;
-
-    /* per debug */
-    background-color: #ccc;
 }
 
 nav ul li{
@@ -58,9 +55,6 @@ nav ul li{
 /* —————————— Slider —————————— */
 
 .slider-container{
-    /* per debug */
-    background-color: rgba(255, 255, 226, 0.815);
-
     padding:50px;
     height:calc(100vh - 110px);
 }
@@ -91,7 +85,6 @@ nav ul li{
 /* —————————— footer —————————— */
 footer{
     height:50px;
-    border-top:1px solid #000;
 
     position:absolute;
     bottom:0;

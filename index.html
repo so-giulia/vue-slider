@@ -48,12 +48,12 @@
                 <!-- prev end -->
 
                 <!-- slides start -->
-                <img src="img/img1.jpeg" alt="Img1">
+                <img :src="imgs[counter]" alt="Img1">
                 <!-- slides end -->
 
                 <!-- next start -->
                 <div class="next row justify-center align-center">
-                    <img class="chevron-next" src="img/svg/chevron-right.svg" alt="chevron-right">
+                    <img @click="slideForwards()" class="chevron-next" src="img/svg/chevron-right.svg" alt="chevron-right">
                 </div>
                 <!-- next end -->
             </div>
