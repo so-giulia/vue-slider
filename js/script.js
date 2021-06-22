@@ -15,6 +15,9 @@ const app = new Vue(
         methods:{
             slideForwards(){
                 (this.counter == this.imgs.length -1) ? this.counter = 0 : this.counter++;
+            },
+            slideBackwards(){
+                (this.counter == 0) ? this.counter = this.imgs.length-1 : this.counter--;
             }
         }
     }
