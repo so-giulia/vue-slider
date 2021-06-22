@@ -12,12 +12,21 @@ const app = new Vue(
                 'img/img6.jpeg'
             ]
         },
+        mounted: function () {
+            this.slideAuto();
+        },
         methods:{
             slideForwards(){
                 (this.counter == this.imgs.length -1) ? this.counter = 0 : this.counter++;
             },
             slideBackwards(){
-                (this.counter == 0) ? this.counter = this.imgs.length-1 : this.counter--;
+                (this.counter == 0) ? this.counter = this.imgs.length-1 : this.counter--;  
+            },
+            slideAuto(){
+                let app = this;
+                setInterval(function(){
+                    app.slideForwards();
+                }, 3000);
             }
         }
     }
